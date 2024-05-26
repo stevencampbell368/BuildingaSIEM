@@ -101,7 +101,7 @@ INSERT TEXT<br />
 
 
 
-<p>following these steps, I successfully created a fully functional SIEM environment using the Elastic Stack, capable of generating, forwarding, analyzing, and visualizing security events, thereby enhancing my ability to monitor and respond to potential security threats effectively.</p>
+<p>By following these steps, I successfully created a fully functional SIEM environment using the Elastic Stack, capable of generating, forwarding, analyzing, and visualizing security events, thereby enhancing my ability to monitor and respond to potential security threats effectively.</p>
 <p align="center">
 <img src="https://imgur.com/m0b9Exn.png" height="65%" width="65%" alt=""/>
 </p>
