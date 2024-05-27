@@ -58,8 +58,10 @@ In this task, I set up a home lab for Elastic Stack Security Information and Eve
 <p>4. The three dots next to each event in the results were clicked to view more details. This provided detailed information about each security event, including timestamps, source, and destination IP addresses, and more.</p>
 
 <p align="center">
-<img src="https://imgur.com/BnqkRhW.png" height="65%" width="65%" alt=""/>
+<img src="https://imgur.com/GsIBgbB.png" height="65%" width="65%" alt=""/>
 </p>
+
+
 
 <h2>Part 3: Visualizing and Monitoring Events</h2>
 
