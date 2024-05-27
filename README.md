@@ -46,6 +46,9 @@ In this task, I set up a home lab for Elastic Stack Security Information and Eve
 
 <p>1. Security events were generated using Nmap (Network Mapper) on the Kali VM to simulate network scans. Nmap is a tool used for network discovery and security auditing. Commands such as `nmap -sP 192.168.1.0/24` were executed to perform network scans and generate logs.</p>
 
+<p align="center">
+<img src="https://imgur.com/kiCBUz7.png" height="65%" width="65%" alt=""/>
+</p>
 
 <b>Querying Security Events in Elastic SIEM</b>
 
@@ -58,9 +61,8 @@ In this task, I set up a home lab for Elastic Stack Security Information and Eve
 <p>4. The three dots next to each event in the results were clicked to view more details. This provided detailed information about each security event, including timestamps, source, and destination IP addresses, and more.</p>
 
 <p align="center">
-<img src="https://imgur.com/GsIBgbB.png" height="65%" width="65%" alt=""/>
+<img src="https://imgur.com/srHkWjQ.png" height="65%" width="65%" alt=""/>
 </p>
-
 
 
 <h2>Part 3: Visualizing and Monitoring Events</h2>
@@ -78,7 +80,7 @@ In this task, I set up a home lab for Elastic Stack Security Information and Eve
 <p>5. The visualization was saved by clicking on the "Save" button and added to the dashboard. This provided a visual representation of security events for easier monitoring and analysis.</p>
 
 <p align="center">
-<img src="https://imgur.com/BnqkRhW.png" height="65%" width="65%" alt=""/>
+<img src="https://imgur.com/WPSju6A.png" height="65%" width="65%" alt=""/>
 </p>
 
 <b>Creating Alerts</b>
@@ -87,15 +89,17 @@ In this task, I set up a home lab for Elastic Stack Security Information and Eve
 
 <p>2. Clicked on "Manage rules" at the top right of the Alerts page and then clicked on "Create new rule" to define a new alert.</p>
 
-<p>3. The "Custom query" option was selected under the "Define rule" section, and the query `event.action: "nmap_scan"` was entered to detect Nmap scan events.</p>
+<p>3. The "Custom query" option was selected under the "Define rule" section, and the query `process.args: "nmap"` was entered to detect Nmap scan events.</p>
 
-<p>4. The rule was named "Nmap Scan Detection" and provided with a description for clarity. The severity level was also set to prioritize the alert based on its importance.</p>
+<p>4. The rule was named "Nmap Detection" and provided with a description for clarity. The severity level was also set to prioritize the alert based on its importance.</p>
 
 <p>5. The action to be taken when the rule is triggered was configured, such as sending an email notification, creating a Slack message, or triggering a custom webhook. This ensures that appropriate actions are taken when a security event is detected.</p>
 
 <p>6. Finally, the "Create and enable rule" button was clicked to finalize the creation of the alert. The rule was now active and monitored the logs for Nmap scan events.</p>
 
-
+<p align="center">
+<img src="https://imgur.com/iJCyiSJ.png" height="65%" width="65%" alt=""/>
+</p>
 
 
 
@@ -103,9 +107,7 @@ In this task, I set up a home lab for Elastic Stack Security Information and Eve
 
 
 <p>By following these steps, I successfully created a fully functional SIEM environment using the Elastic Stack, capable of generating, forwarding, analyzing, and visualizing security events, thereby enhancing my ability to monitor and respond to potential security threats effectively.</p>
-<p align="center">
-<img src="https://imgur.com/m0b9Exn.png" height="65%" width="65%" alt=""/>
-</p>
+
 
 
 <h2>Languages Used</h2>
