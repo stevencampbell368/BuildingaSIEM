@@ -8,11 +8,10 @@ In this task, I set up a home lab for Elastic Stack Security Information and Eve
 
 
 <h2>Part 1: Setting Up the Environment</h2>
-INSERT TEXT<br />
 <br />
 
 
-<p>1.The first step involved logging into the Elastic cloud instance by signing up for a free account at [Elastic Cloud](https://cloud.elastic.co/). This provided access to the necessary tools for setting up and managing a SIEM.</p>
+<p>1. The first step involved logging into the Elastic cloud instance by signing up for a free account at [Elastic Cloud](https://cloud.elastic.co/). This provided access to the necessary tools for setting up and managing a SIEM.</p>
 
 
 <p>2. Next, the Kali Linux VM was downloaded from the official Kali website. This VM is pre-configured with various tools used for penetration testing and security research.</p>
@@ -25,7 +24,7 @@ INSERT TEXT<br />
 <p>5. Finally, the Kali VM was logged into using the default credentials (username: kali, password: kali) to begin the configuration and integration process.</p>
 
 <p align="center">
-<img src="https://imgur.com/ei5dySb.png" height="65%" width="65%" alt=""/>
+<img src="https://imgur.com/PrC1z8D.png" height="65%" width="65%" alt=""/>
 </p>
 
 <b>Configuring the Elastic Agent</b>
@@ -37,7 +36,7 @@ INSERT TEXT<br />
 <p>3. Verification of the agent installation was done by running the command: `sudo systemctl status elastic-agent.service`. This command checks the status of the agent to ensure it is running properly and able to collect and forward logs to the SIEM.</p>
 
 <p align="center">
-<img src="https://imgur.com/ei5dySb.png" height="65%" width="65%" alt=""/>
+<img src="https://imgur.com/Q0Tex1H.png" height="65%" width="65%" alt=""/>
 </p>
 
 
@@ -52,7 +51,7 @@ INSERT TEXT<br />
 
 <p>1. The Elastic SIEM interface was opened, and the search bar at the top of the screen was used.</p>
  
-<p>2. The search query `event.action: "nmap_scan"` was entered to filter logs related to Nmap scans. This query searches for events where the action matches "nmap_scan."</p>
+<p>2. The search query `process.args: "nmap"` was entered to filter logs related to Nmap scans. This query searches for events where the action matches "nmap"</p>
 
 <p>3. The "Search" button was clicked to execute the search query. The results of the search query were displayed in a table format below the search bar.</p>
 
